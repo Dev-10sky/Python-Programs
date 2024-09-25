@@ -1,10 +1,11 @@
 import math
 
 def printDisplay(a):
+	line = len(a[0])
 	for n in a:
 		temp = ''.join(n)
 		print(temp)
-	print("<----------------------------------------------->")
+	print("--"*line)
 
 def makeDisplay(maxval,arrlen):
 	temp = [["  " for n in range(arrlen)] for x in range(maxval)]
