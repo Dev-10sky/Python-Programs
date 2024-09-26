@@ -1,5 +1,5 @@
 import math
-from box.box import Display
+from ..box.box import Display
 
 def bubble(lst):
 	for m in range(len(lst)-1):
@@ -21,6 +21,6 @@ def bubbleDisplay(arr,display:Display):
 	return arr
 
 if __name__ == '__main__':
-	l = [7, 4, 8, 6, 2 ,1 ,9, 10, 5]
+	l = [7, 4, 8, 6, 2 ,1 ,9, 10, 5, 3, 15]
 	dispOne = Display(max(l),len(l))
 	print(bubbleDisplay(l,dispOne))
